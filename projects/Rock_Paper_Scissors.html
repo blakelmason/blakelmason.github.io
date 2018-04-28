@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Rock Paper Scissors Part 2
+  </title>
+</head>
+
+<body>
+
+  <div id="game">
+    <h1>player: <span id="player-choice"> please choose "r" for rock, "p" for paper, or "s" for scissors </span></h1>
+    <h1>computer: <span id="computer-choice">-</span></h1>
+    <h1>win: <span id="win">-</span></h1>
+    <h1>loss: <span id="loss">-</span></h1>
+    <h1>tie: <span id="tie">-</span></h1>
+  </div>
+
+  <script type="text/javascript">
+
+    var computerChoices = ["r", "p", "s"];
+    var playerScore = 0;
+    var computerScore = 0;
+    var tiedScore = 0
+
+    document.onkeyup = function(event) {
+      var userGuess = event.key;
+      var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+
+      if (userGuess === "r" || userGuess === "p" || userGuess === "s") {
+
+        if (userGuess === "r") { document.getElementById("player-choice").textContent = "rock" }
+        if (userGuess === "p") { document.getElementById("player-choice").textContent = "paper" }
+        if (userGuess === "s") { document.getElementById("player-choice").textContent = "scissors" }
+        if (computerGuess === "r" ) { document.getElementById("computer-choice").textContent = "rock" }
+        if (computerGuess === "p" ) { document.getElementById("computer-choice").textContent = "paper" }
+        if (computerGuess === "s" ) { document.getElementById("computer-choice").textContent = "scissors" }
+
+        if (userGuess === "r") {
+          if (computerGuess === "s") {
+            playerScore++;
+          } else if (computerGuess === "p") {
+            computerScore++;
+          } else {
+            tiedScore++;
+          }
+        }
+
+        if (userGuess === "p") {
+          if (computerGuess === "r") {
+            playerScore++;
+          } else if (computerGuess === "s") {
+            computerScore++;
+          } else {
+            tiedScore++;
+          }
+        }
+
+        if (userGuess === "s") {
+          if (computerGuess === "p") {
+            playerScore++;
+          } else if (computerGuess === "r") {
+            computerScore++;
+          } else {
+            tiedScore++;
+          }
+        }
+
+        document.getElementById("player-choice").style.color = "black";
+        document.getElementById("win").textContent = playerScore;
+        document.getElementById("loss").textContent = computerScore;
+        document.getElementById("tie").textContent = tiedScore;
+
+      } else {
+        document.getElementById("player-choice").textContent = "please choose \"r\" for rock, \"p\" for paper, or \"s\" for scissors";
+        document.getElementById("player-choice").style.color = "red";
+        document.getElementById("computer-choice").textContent = "-";
+      }
+    }
+    
+
+      
+  </script>
+
+</body>
+
+</html>

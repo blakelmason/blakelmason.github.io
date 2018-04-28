@@ -1,0 +1,251 @@
+html {
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url("../images/background1.png");
+    min-height: 100%;
+}
+
+p {
+    color: #777777;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2;
+}
+
+h5 {
+    font-size: 18px;
+    color: #777777;
+}
+
+input {
+    color: #777777!important;
+}
+
+textarea {
+    color: #777777!important;
+}
+
+::placeholder {
+    color: #bbbbbb!important;
+}
+
+.nav-link {
+    color: #999999;
+    transition: text-shadow 1s, color 1s;
+}
+
+.nav-link:hover {
+    color: #555555;
+}
+
+.nav-item {
+    width: 33.333333%;
+}
+
+.card {
+    border-radius: 0px;
+}
+
+.connect-icon {
+    height: 65px;
+    width: 65px;
+    object-fit: contain;
+    padding: 10px;
+    margin: 5px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 0px 0px white;
+    transition: box-shadow 1s;
+}
+
+.connect-icon:hover {
+    box-shadow: 0px 0px 15px #4aaaa5;
+}
+
+.footer {
+    width: 100%;
+    padding: 30px 0px 30px 0px;
+    border-top: 4px solid #4aaaa5;
+    background: #666666;
+    color: #cccccc;
+    text-align: center;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.portfolio-image {
+    border: 1px solid #dddddd;
+    box-shadow: 0px 0px 10px #dddddd;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    object-fit: cover!important;
+}
+
+.image-div {
+    position: relative;
+}
+
+.image-bar {
+    position: absolute;
+    top: 75%;
+    width: 100%;
+    height: 15%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    background-color: #4aaaa5;
+    border-right: 1px solid #dddddd;
+    border-left: 1px solid #dddddd;
+}
+
+.image-text {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3vw;
+}
+
+#footer-line {
+    width: 100%;
+    border: 2px solid red;
+}
+
+#header-div {
+    background: #ffffff;
+}
+
+#navbar-container {
+    background-color: #ffffff;
+}
+
+#center-nav-item {
+    border-right: .5px solid #dddddd;
+    border-left: .5px solid #dddddd;
+}
+
+#header-name {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    background-color: #4aaaa5;
+    font-size: 24px;
+    padding: 20px 30px 20px 30px;
+    text-align: center;
+    color: #ffffff;
+}
+
+#about-me-header {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #4aaaa5;
+    font-size: 24px;
+    border-bottom: 2px solid #dddddd;
+    padding-bottom: 15px;
+}
+
+#about-me-image {
+    margin: 5px 15px 5px 0px;
+    object-fit: cover;
+    box-sizing: border-box;
+    max-width: 100%;
+    float: left;
+    border: 1px solid #dddddd;
+}
+
+#connect-header {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #4aaaa5;
+    font-size: 18px;
+    border-bottom: 2px solid #eeeeee;
+    padding-bottom: 15px;
+}
+
+#submit-button {
+    background-color: #4aaaa5;
+    border: 0;
+    border-radius: 0;
+    width: 95px; 
+}
+
+#footer-nav {
+    background-color: #444444;
+}
+
+#footer-text {
+    color: #aaaaaa;
+    font-size: 14px;
+}
+
+#portfolio-image-div {
+    padding: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+    #header-name {
+        width: 100%;
+    }
+
+    #navbar-container {
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+    }
+
+    #center-container {
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    #about-me-image {
+        width: 100%;
+    }
+
+    .image-text {
+        font-size: 5vw;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+    #about-me-image {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    #about-me-image {
+        width: 100%;
+        height: 300px;
+    }
+
+    .image-text {
+        font-size: 36px;
+     }
+}
+
+@media only screen and (min-width: 768px) {
+    #navbar-container {
+        max-width: 960px;
+    }
+
+    #center-container {
+        max-width: 960px;
+    }
+
+    #header-nav {
+        width: 300px;
+    }
+}
+
+
