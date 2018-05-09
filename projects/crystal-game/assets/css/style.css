@@ -1,0 +1,88 @@
+body {
+    background-image: url("../images/background.png");
+}
+
+#header {
+    background-color: rgb(255, 188, 87);
+    width: fit-content;
+    height: auto;
+    font-size: 26px;
+    margin: 15px;
+    padding: 20px;
+}
+
+#instructions {
+    background-color: rgb(255, 242, 123);
+    width: 400px;
+    height: auto;
+    margin: 15px 15px 0px 15px;
+    padding: 20px;
+}
+
+#target-number-div {
+    background-color: rgb(66, 255, 145);
+    width: 200px;
+    height: 100px;
+    margin: 15px;
+    padding: 20px;
+}
+
+#target-number {
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+#wins-losses {
+    width: 130px;
+    margin: 15px;
+    padding: 20px;
+    background-color: rgb(87, 235, 255);
+}
+
+#wins {
+    float: left;
+    margin-right: 5px;
+}
+
+#losses {
+    float: left;
+    margin-right: 5px;
+}
+
+#loss-margin {
+    margin-top: 10px;
+}
+
+#flex1 {
+    display: flex;
+    justify-content: space-between;
+    width: 470px;
+}
+
+#crystals {
+    display: flex;
+    justify-content: space-between;
+    width: 440px;
+    margin-left: 15px;
+}
+
+.crystal {
+    width: 90px;
+    height: 90px;
+    background-color: white;
+    border: 1px solid #999999;
+    cursor: pointer;
+}
+
+#total-score-text {
+    width: 400px;
+    height: 150px;
+    background-color: rgb(238, 210, 255);
+    margin: 15px;
+    padding: 20px;
+}
+
+#total-score {
+    font-size: 48px;
+    margin: 10px;
+}
