@@ -33,15 +33,6 @@ textarea {
     color: #bbbbbb!important;
 }
 
-.nav-link {
-    color: #999999;
-    transition: text-shadow 1s, color 1s;
-}
-
-.nav-link:hover {
-    color: #555555;
-}
-
 .nav-item {
     width: 33.333333%;
 }
