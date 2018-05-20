@@ -103,6 +103,7 @@ $(document).ready(function () {
 
 
                         //change timer to number right
+                        $timerDiv.css('height', 'fit-content')
                         $timer.css('color', '#333333')
                         $timer.html('Time\'s up! ' + rightAnswers + '/5 correct.')
 
