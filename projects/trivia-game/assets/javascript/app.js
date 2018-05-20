@@ -72,7 +72,6 @@ $(document).ready(function () {
                         $finishButton.remove();
                     })
                     countdownFunc();
-                    $(window).scrollTop(0);
                 })
 
 
@@ -111,6 +110,10 @@ $(document).ready(function () {
                         //disable radio buttons
                         var $radio = $('input[type="radio"]')
                         $radio.attr('disabled', true)
+
+                        //scroll to top of page
+                        $(window).scrollTop(0);
+
 
                     } else {
 
