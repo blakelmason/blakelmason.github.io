@@ -111,7 +111,7 @@ $(document).ready(function () {
                         var $radio = $('input[type="radio"]')
                         $radio.attr('disabled', true)
 
-                        //scroll to top of page
+                        //scroll to top of
                         $(window).scrollTop(0);
 
 
