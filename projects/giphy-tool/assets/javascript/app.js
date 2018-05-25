@@ -15,6 +15,16 @@ var colors = ['#FF3C38', '#FF8C42', '#FFF275', '#85d68b', '#9DD9D2', '#6699CC', 
 var currentColorIndex = 0;
 
 
+//enter key for topic input
+var input = $('#topic-input');
+input.bind('keyup', function(event) {
+  event.preventDefault();
+  if (event.keyCode === 13) {
+    $('#add-button').click();
+  }
+});
+
+
 
 //// CLICK EVENTS ////
 

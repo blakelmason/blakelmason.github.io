@@ -12,7 +12,6 @@ body{
 
 p {
     color: #777777;
-    font-family: Arial, Helvetica, sans-serif;
     line-height: 2;
 }
 
@@ -35,6 +34,25 @@ textarea {
 
 .nav-item {
     width: 33.333333%;
+}
+
+.nav-link {
+    color: #aaaaaa;
+    transition: all 1s;
+}
+
+.nav-link:hover {
+    color: #333333;
+    font-weight: bold;
+}
+
+.current-page {
+    color: #4aaaa5;
+    font-weight: bold;
+}
+
+.current-page:hover {
+    color: #4aaaa5;
 }
 
 .card {
@@ -60,12 +78,11 @@ textarea {
 .footer {
     width: 100%;
     padding: 30px 0px 30px 0px;
-    border-top: 4px solid #4ea39f;
+    border-top: 4px solid #4aaaa5;
     background: #666666;
     color: #cccccc;
     text-align: center;
     margin-top: 20px;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     display: flex;
     flex-direction: column;
@@ -101,7 +118,6 @@ textarea {
 }
 
 .image-text {
-    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 3vw;
 }
 
@@ -124,17 +140,14 @@ textarea {
 }
 
 #header-name {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: bold;
     background-color: #4aaaa5;
     font-size: 24px;
-    padding: 20px 30px 20px 30px;
+    padding: 20px;
     text-align: center;
     color: #ffffff;
 }
 
 #about-me-header {
-    font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
     color: #4aaaa5;
     font-size: 24px;
@@ -152,7 +165,6 @@ textarea {
 }
 
 #connect-header {
-    font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
     color: #4aaaa5;
     font-size: 18px;
@@ -179,6 +191,7 @@ textarea {
 #portfolio-image-div {
     padding: 20px;
 }
+
 
 @media only screen and (max-width: 767px) {
     #header-name {
@@ -223,6 +236,10 @@ textarea {
 
     .image-text {
         font-size: 20px;
+     }
+
+     #connect-column {
+         padding-left: 8px;
      }
 }
 
